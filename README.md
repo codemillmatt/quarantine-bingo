@@ -1,5 +1,7 @@
 # Quarantine Bingo
 
+![bingo game drawing](https://res.cloudinary.com/code-mill-technologies-inc/image/upload/c_scale,h_600/v1588012752/93625_vveito.jpg)
+
 As I write this it's April of 2020, so you know what that means... I'm stuck inside of my house. And my extended family is stuck inside of their houses too.
 
 So to help pass the time and keep those family bonds strong ... we decided to have a weekly family game night over FaceTime and play bingo!
@@ -13,6 +15,8 @@ So here's what I built. It's a simple Xamarin.Forms app that displays a bingo ca
 I _could_ tap on the numbers as they're being called (y'know, if I happened to be paying attention).
 
 And it tells me if I've won the game or not.
+
+![game in action](https://res.cloudinary.com/code-mill-technologies-inc/image/upload/e_shadow:40/v1588009518/ScreenFlow_glsnrg.gif)
 
 ## Cognitive Services Speech to Text
 

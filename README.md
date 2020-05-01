@@ -12,11 +12,13 @@ So I decided to write a quick app to help auto recognize bingo numbers as they'r
 
 So here's what I built. It's a simple Xamarin.Forms app that displays a bingo card.
 
-I _could_ tap on the numbers as they're being called (y'know, if I happened to be paying attention).
+I _could_ tap on the numbers as they're being called... but it's much more fun to let the iPad do it for me!
 
 And it tells me if I've won the game or not.
 
 ![game in action](https://res.cloudinary.com/code-mill-technologies-inc/image/upload/e_shadow:40/v1588009518/ScreenFlow_glsnrg.gif)
+
+What's not to like?
 
 ## Cognitive Services Speech to Text
 
@@ -24,7 +26,7 @@ To figure out what number has been called I'm using one of the lesser known [Cog
 
 What Speech to Text does is pretty simple. It uses the microphone to listen to a stream of words, then translates those words into a string, then returns it to you. 
 
-(It also does a whole lot more - the SDK has functionality to ["listen" for wake words](https://docs.microsoft.com/azure/cognitive-services/speech-service/how-to-choose-recognition-mode?WT.mc_id=quarantinebingo-github-masoucou) - so you can build your own Alexa if you want!)
+(It also does a whole lot more - the SDK has functionality to ["listen" for wake words](https://docs.microsoft.com/azure/cognitive-services/speech-service/how-to-choose-recognition-mode?WT.mc_id=quarantinebingo-github-masoucou) - think along the lines of Cortana!)
 
 And there's a free tier so I won't have to pay anything!
 
@@ -148,7 +150,7 @@ There's also a little bit of bingo logic going on here. First I'm taking that st
 
 The text that comes back will be full sentences and if people are talking, the bingo numbers will be buried within.
 
-And I found that any **G** bingo numbers come across as **3**. So **G56** interprets as **356**. So I'm actually looking for 3 numbers in a row - and throwing that first one out.
+I found that any **G** bingo numbers come across as **3**. So **G56** interprets as **356**. So I'm actually looking for 3 numbers in a row - and if I find 3 then throwing that first one out.
 
 ## Bingo!!
 
@@ -156,7 +158,9 @@ That's all there is to it. A pretty simple project that adds some really neat fu
 
 And the best part - it really wows your family! 🤣
 
-So check out the code - and expand upon it - I'd love to see what you come up with! **AND DON'T JUDGE MY GAME PROGRAMMING SKILLS!** I brute forced everything! 
+So check out the code - and expand upon it - I'd love to see what you come up with! (One suggestion - have it check for & then launch your favorite music streaming service ... that way you can have it play a victory song when you win!)
+
+**AND DON'T JUDGE MY GAME PROGRAMMING SKILLS!** I brute forced everything! 
 
 Multiple arrays for each column - check the winning scenarios manually, and it's easy to trick - it's all hard-coded and brute force!! 💪
 

@@ -22,11 +22,11 @@ What's not to like?
 
 ## Cognitive Services Speech to Text
 
-To figure out what number has been called I'm using one of the lesser known [Cognitive Services - that of Speech to Text](https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstarts/speech-to-text-from-microphone?WT.mc_id=quarantinebingo-github-masoucou).
+To figure out what number has been called I'm using one of the lesser known [Cognitive Services - that of Speech to Text](https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstarts/speech-to-text-from-microphone?WT.mc_id=mobile-0000-masoucou).
 
 What Speech to Text does is pretty simple. It uses the microphone to listen to a stream of words, then translates those words into a string, then returns it to you. 
 
-(It also does a whole lot more - the SDK has functionality to ["listen" for wake words](https://docs.microsoft.com/azure/cognitive-services/speech-service/how-to-choose-recognition-mode?WT.mc_id=quarantinebingo-github-masoucou) - think along the lines of Cortana!)
+(It also does a whole lot more - the SDK has functionality to ["listen" for wake words](https://docs.microsoft.com/azure/cognitive-services/speech-service/how-to-choose-recognition-mode?WT.mc_id=mobile-0000-masoucou) - think along the lines of Cortana!)
 
 And there's a free tier so I won't have to pay anything!
 
@@ -45,7 +45,7 @@ There's three parts to getting Speech to Text working.
 
 ### Setup Azure
 
-Go to the Azure portal - then [startup the CLI](https://docs.microsoft.com/azure/cloud-shell/quickstart?view=azure-cli-latest&WT.mc_id=quarantinebingo-github-masoucou). Then enter these commands:
+Go to the Azure portal - then [startup the CLI](https://docs.microsoft.com/azure/cloud-shell/quickstart?view=azure-cli-latest&WT.mc_id=mobile-0000-masoucou). Then enter these commands:
 
 ```language-bash
 RESOURCE_GROUP_NAME = "PUT THE NAME OF YOUR RESOURCE GROUP HERE CALL IT WHATEVS"
@@ -90,7 +90,7 @@ Now you'd think this would be the difficult part. You have to prompt for the mic
 
 Turns out it's not too bad!
 
-Prompting for the permissions is a breeze thanks to [`Xamarin.Essentials`](https://docs.microsoft.com/xamarin/essentials/permissions?WT.mc_id=quarantinebingo-github-masoucou). It'll look something like this:
+Prompting for the permissions is a breeze thanks to [`Xamarin.Essentials`](https://docs.microsoft.com/xamarin/essentials/permissions?WT.mc_id=mobile-0000-masoucou). It'll look something like this:
 
 ```language-csharp
 public async Task<PermissionStatus> CheckAndRequestMicrophonePermission()
